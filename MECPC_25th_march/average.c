@@ -1,6 +1,5 @@
 #include<stdio.h>
 
-
 float formula(int x){
     float cube, upper,lower;
 
@@ -9,7 +8,6 @@ float formula(int x){
     lower = 2*x*x;
 
     
-
     return  cube*(upper/lower);
 }
 
@@ -17,7 +15,7 @@ float formula(int x){
 int main(){
 
      int a, i ,n, sum = 0;
-     float avg,temp[3];
+     float avg,temp[10000];
      scanf("%d",&n);
 
 
@@ -30,7 +28,7 @@ int main(){
      {
          sum = sum + temp[i];
      }
-      printf("%d", sum/n);
+      printf("%d\n", sum/n);
 
 return 0;
 }
